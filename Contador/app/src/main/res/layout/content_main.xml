@@ -1,80 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <TextView
-        android:id="@+id/titulo"
+    android:orientation="vertical" >
+    <TextView android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginTop="4dp"
-        android:text="Contador"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Hello, I am a TextView" />
 
 
-    <TextView
-        android:id="@+id/contaodorNumeros"
+    <Button android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="216dp"
-        android:layout_marginLeft="216dp"
-
-        android:layout_marginTop="60dp"
-        android:text=" "
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/decrementar"
-        android:layout_width="59dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="124dp"
-        android:onClick="desecrementacontador"
-        android:text="-"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/resetear"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
-
-    <Button
-        android:id="@+id/incrementar"
-        android:layout_width="57dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="256dp"
-        android:layout_marginLeft="256dp"
-        android:layout_marginTop="124dp"
-        android:onClick="IncrementarContador"
-        android:text="+"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/resetear"
-        android:layout_width="175dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="260dp"
-        android:onClick="resetearContador"
-        android:text="Resetear"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Hello, I am a Button"
+        android:layout_marginTop="20dp"
+        />
+    
+</LinearLayout>
